@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./decoder.js" defer></script>
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <img src="./Fotos/logo@3x.png" alt="logo-alura" class="logo" />
+        <div class="main-content">
+          <section class="write_text">
+            <textarea
+              name="text_area"
+              id="text_area"
+              cols="30"
+              rows="10"
+              placeholder="Digite seu texto"
+            ></textarea>
+
+            <p>
+              <img
+                src="./Fotos/Vector@3x.png"
+                alt="exclamation point"
+                class="exclamation_vector"
+              />Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="buttons">
+              <button id="criptoBtn">Criptografar</button>
+              <button id="decriptoBtn">Descriptografar</button>
+            </div>
+          </section>
+
+          <section class="side-bar">
+            <div class="show">
+              <textarea
+                name="msg-decodificada"
+                id="msg-decodificada"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button id="copy">Copiar</button>
+            </div>
+            <div class="hide">
+              <img src="./Fotos/vetor-bck.svg" alt="menino-sentado-com-lupa" />
+              <h3>Nenhuma mensagem encontrada</h3>
+              <p>
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>Desenvolvido por: Barbara Coelho</p>
+        <p>github.com/balicoelho</p>
+      </footer>
+    </div>
+  </body>
+</html>
